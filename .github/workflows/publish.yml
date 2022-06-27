@@ -10,8 +10,8 @@ jobs:
           node-version: '16'
       - uses: actions/checkout@v2
       - run: |
-        npm install
-        npm run build
+          npm install
+          npm run build
       - uses: valist-io/valist-github-action@dev
         with:
           rpc-url: https://rpc.valist.io/mumbai
