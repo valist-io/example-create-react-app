@@ -52,7 +52,7 @@ Run the following from your project root.
 
 ```bash
 $ npm run build
-$ valist publish <your-account-name-here>/<your-project-name-here> ./build
+$ valist publish <your-account-name-here>/<your-project-name-here>/<your-release-name-here> ./build
 ```
 
 ### Advanced
