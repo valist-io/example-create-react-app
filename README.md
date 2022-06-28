@@ -4,7 +4,15 @@ This example demonstrates how to publish your Create React App on Valist.
 
 [Click here to view this project on Valist.](https://mumbai.valist.io/nasdf/example-create-react-app)
 
-> *IMPORTANT* You must add `"homepage": "."` to your `package.json` for the static build paths to work correctly.
+## Setup
+
+Edit your `package.json` to use relative paths.
+
+```json
+{
+  "homepage": "."
+}
+```
 
 ## Publish with the Valist GitHub Action
 
@@ -36,7 +44,20 @@ jobs:
 
 ## Publish with the Valist CLI
 
-Create a `valist.yml` file in the root of your project.
+See the [CLI Quick Start](https://docs.valist.io/cli/cli-quick-start) for more info.
+
+### Simple
+
+Run the following from your project root.
+
+```bash
+$ npm run build
+$ valist publish <your-account-name-here>/<your-project-name-here> ./build
+```
+
+### Advanced
+
+Create a `valist.yml` file in your project root.
 
 ```yaml
 account: <your-account-name-here>
@@ -45,9 +66,9 @@ release: <your-release-name-here>
 path: ./build
 ```
 
-See the [CLI Quick Start](https://docs.valist.io/cli/cli-quick-start) for more info.
+Run the following from your project root.
 
 ```bash
 $ npm run build
-$ valist publish <your-account-name-here>/<your-project-name-here> ./build
+$ valist publish
 ```
