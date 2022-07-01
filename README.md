@@ -33,7 +33,7 @@ jobs:
       - run: |
           npm install
           npm run build
-      - uses: valist-io/valist-github-action@dev
+      - uses: valist-io/valist-github-action@v2.3.0
         with:
           private-key: ${{ secrets.PRIVATE_KEY }}
           account: <your-account-name-here>
